@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Main.Controller">
+    <top>
+        <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+            <children>
+                <HBox>
+                    <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                              <MenuBar>
+                                  <menus>
+                                      <Menu mnemonicParsing="false" text="File">
+                                          <items>
+                                              <MenuItem mnemonicParsing="false" onAction="#tagManage" text="TagManage" />
+                                              <MenuItem mnemonicParsing="false" onAction="#openDirectory" text="directories" />
+                                    <MenuItem mnemonicParsing="false" onAction="#modifyDatabaseRoot" text="modify databaseRoot" />
+                                          </items>
+                                      </Menu>
+                                      <Menu mnemonicParsing="false" text="Edit" />
+                                      <Menu mnemonicParsing="false" text="Help">
+                                 <items>
+                                    <MenuItem mnemonicParsing="false" onAction="#openHelp" text="helerp.txt" />
+                                 </items></Menu>
+                                  </menus>
+                              </MenuBar>
+                     </children>
+                  </HBox>
+                    </children>
+                </HBox>
+            <TextField fx:id="databaseRoot" promptText="If this is the first time you use this program, enter directory for your database here">
+               <VBox.margin>
+                  <Insets left="90.0" right="60.0" />
+               </VBox.margin>
+            </TextField>
+            <Button mnemonicParsing="false" onAction="#setDatabase" text="Set database root">
+               <VBox.margin>
+                  <Insets left="250.0" right="200.0" />
+               </VBox.margin>
+            </Button>
+            </children>
+        </VBox>
+    </top>
+</BorderPane>

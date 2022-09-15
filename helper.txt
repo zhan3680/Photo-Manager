@@ -1,0 +1,22 @@
+1. The first time you use this program, you need to enter the path to which
+you want to store the data, called "root". Root will look like "C:\xxx" in Windows. After this, every time you open the 
+program, you do not need to re-enter this path. The configuration file will also 
+be created there. After the first time, if you want to change the root, you can
+use File->modify database;
+p.s Root (aka database directory) is the place where tags will be stored.
+2. After step1, a new window called open directory will show up. You shall 
+then enter a path where your image files are stored, then pressing the button 
+to go to that directory.(you can open specific directory anytime using Fil->open directory) (Directory looks like "C:\xxx")
+3. In the directory, you can rename, move or open the attribute of the image.
+To do this, you always need to first select a certain image.
+4. In rename window, you have a variaty of thing to pick from if you have previously added tags to the global tag pool. Of course, the first time user will not have that.
+In order to add tags to the global tag pool, go to the very first window that program have, on the top left corner click "File", then "TagManage".
+Then you have the ability to add/remove tag from the global tag pool that is persistant.
+5. You can also search image using the searchbox. Use @less tag to search! (Like search with "January" instead of "!January")
+6. History also works, beware that you need to pick something first to make everything work!
+
+
+
+
+warning: 1. you should not have two files of the same name(name without tag)(E.g. test.png and test @x.png)
+2.upon searching image by tags, you don't need to enter "@" before tag name; 
